@@ -56,3 +56,17 @@ body{
             background-color: #d1281c; 
             color: #fff; 
         }
+        ::-webkit-scrollbar {
+            display: none;
+          }
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+          body *:not(nav, nav *, footer, footer *) {
+            animation: fadeIn 1.5s ease-in-out; 
+          }
