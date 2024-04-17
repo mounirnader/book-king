@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book King</title>
+    <link rel="stylesheet" href="/public/css/signup-login.css">
+</head>
+<body>
+    <div class="elform">
+        <form id="redirectForm" action="shop.html" method="post">
+            <label>USERNAME</label>
+            <input placeholder="username" name="username" type="text" id="ID1" required>
+            
+            <label>EMAIL</label>
+            <input placeholder="email address" name="email" type="email" id="EM2" required>
+            
+            <label>PASSWORD</label>
+            <input placeholder="password" name="password" type="password" id="pass" required>
+            
+            <label>CONFIRM PASSWORD</label>
+            <input placeholder="password confirmation" name="cpass" type="password" id="pass1" required>
+            
+            <label>AGE</label>
+            <input placeholder="16" name="age" type="date" id="age">
+            <label>Address</label>
+            <input placeholder="Address" name="address" type="text" id="address">
+            <button class="btn" type="submit" onclick="verify()">Sign Up</button>
+            
+           
+            <p id="message"></p>
+            
+            <label>ALREADY HAVE AN <a href="login.html">ACCOUNT</a>?</label>
+            <button type="button" class="exit" onclick="location.replace('home.html')">Cancel</button>
+
+        </form>
+        </div>
+</body>
+</html>
