@@ -4,30 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book King</title>
-    <link rel="stylesheet" href="/public/css/signup-login.css">
+    <link rel="stylesheet" href="../public/css/signup-login.css">
 </head>
 <body>
     <div class="elform">
         <form id="redirectForm" action="shop.html" method="post">
-            <label>USERNAME</label>
-            <input placeholder="username" name="username" type="text" id="ID1" required>
-            
-            <label>EMAIL</label>
-            <input placeholder="email address" name="email" type="email" id="EM2" required>
-            
-            <label>PASSWORD</label>
-            <input placeholder="password" name="password" type="password" id="pass" required>
-            
-            <label>CONFIRM PASSWORD</label>
-            <input placeholder="password confirmation" name="cpass" type="password" id="pass1" required>
-            
-            <label>AGE</label>
-            <input placeholder="16" name="age" type="date" id="age">
-            <label>Address</label>
-            <input placeholder="Address" name="address" type="text" id="address">
-            <button class="btn" type="submit" onclick="verify()">Sign Up</button>
-            
+            <label for="n1">FULL NAME</label>
+            <input placeholder="Enter Your Full Name" name="fname" type="text" id="n1" required title='Field must include your real first and last name'>
+            <div id="error-1">
+                <span><img src="../public/images/required.png"  alt="req" />ENTER YOUR PROPER FULL NAME</span>
+            </div>
+
+            <label for='EM'>EMAIL</label>
+            <input placeholder="Enter Your Email" name="email" type="email" id="EM" required title="Write an unused email address">
+            <div id="error-2">
+                <span><img src="../public/images/required.png"  alt="req" />EMAIL ALREADY REGISTERED</span>
+            </div>
+
+            <label for="pass">PASSWORD</label>
+            <input placeholder="Enter Your Paasowrd" name="password" type="password" id="pass" required title='Password must contain at least 8 characters'>
+            <div id="error-4">
+                <span><img src="../public/images/required.png"  alt="req" />PASSWORD MUST CONTAIN 8 CHARS</span>
+            </div>
+
+            <label for="pass1">CONFIRM PASSWORD</label>
+            <input placeholder="Confirm Your Password" name="cpass" type="password" id="pass1" required>
+             <div id="error-3">
+                <span><img src="../public/images/required.png"  alt="req" />PASSWORDS DON'T MATCH</span>
+            </div>
+
+            <label for='phone'>PHONE NUMBER</label>
+            <input placeholder="Enter Your Phone Number" name="phone" type="tel" id="phone" required title="Working Egyptian number">
+            <div id="error-5">
+                <span><img src="../public/images/required.png"  alt="req" />INVALID PHONE NUMBER</span>
+            </div>
+
+            <label for="age">BIRTH DATE</label>
+            <input value="2008-12-31" name="age" type="date" id="age" min="" title='Must at least be 16 years old'>
+
+            <label for="city">CITY</label>
+            <select id="city" name="city"></select>
+            <script src="../public/js/cities.js"></script>
+
+            <label for="'address">Address</label>
+            <input placeholder="Enter Your Address" name="address" type="text" id="address" title='Shipping address'>
            
+            <button class="btn" type="button" id="signUp">Sign Up</button>
             <p id="message"></p>
             
             <label>ALREADY HAVE AN <a href="login.html">ACCOUNT</a>?</label>
@@ -35,5 +57,6 @@
 
         </form>
         </div>
+        <script src="../public/js/validation.js"></script>
 </body>
 </html>

@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book King</title>
-    <link rel="stylesheet" href="/public/css/signup-login.css">
+    <link rel="stylesheet" href="../public/css/signup-login.css">
 </head>
 <body>
-    <div class="elform">
-        <form id="redirectForm1" action="home2.html" method="get">
-            <label>USERNAME </label>
-            <input placeholder="username" name="username" type="text" id="user" required>
-            <label>PASSWORD </label>
-            <input placeholder="password" name="password" type="password" id="passw" required>
-            
-         
-          <button onclick="login()" class="btn" type="submit">Log In</button>
-        
+    <div class="elform log">
+        <form id="redirectForm1" action="home.html" method="get">
+            <label for="email">EMAIL </label>
+            <input placeholder="Enter Your Username" name="email" type="text" id="email" required title="Enter the email connected with your account">
+            <label for='passw'>PASSWORD </label>
+            <input placeholder="Enter Your Password" name="password" type="password" id="passw" required title='Password must contain at least 8 characters'>
+            <div id="error-4">
+                <span><img src="../public/images/required.png"  alt="req" />PASSWORD MUST CONTAIN 8 CHARS</span>
+            </div>
+            <div id="error-6">
+                <span><img src="../public/images/required.png" alt="req" />INVALID EMAIL OR PASSWORD</span>
+            </div>
+          <button  class="btn" type="button" id="login">Log In</button>
           <label>DONT HAVE AN  <a href="signup.html">ACCOUNT</a> ?</label>
           <button type="button" class="exit" onclick="location.replace('home.html')">Cancel</button>
           </form>
           </div>
+          <script src="../public/js/account.js"></script>
 </body>
 </html>
