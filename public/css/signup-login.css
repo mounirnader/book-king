@@ -1,7 +1,6 @@
 body{
-    background-color:black;
-    align-items: center; /* Vertically center items */
-    justify-content: center; /* Horizontally center items */
+  background-color:#212121;
+    align-items: center;  /* Horizontally center items */
     text-align: center;
     }
     .elform{
@@ -15,15 +14,10 @@ body{
                 margin-top:0.5%;
                 margin-bottom:  0.5%;
                 margin-left : 40%;
-                margin-right:40%;               
-                margin-top:0.5%;
-                margin-bottom:  0.5%;
-                margin-left : 40%;
-                margin-right:40%;               
+                margin-right:40%;                          
                 width: 20%;
          
               }
-        .elform input, .elform select, .elform input::placeholder, .btn, .elform label:last-of-type{
         .elform input, .elform select, .elform input::placeholder, .btn, .elform label:last-of-type{
             display: block;
             margin-bottom: 5%;
@@ -43,7 +37,7 @@ body{
        }
     
         .elform select{
-          width:50%
+          width:50%;
             border-radius: 5px; 
         }
        .exit{
@@ -143,13 +137,7 @@ body{
             }
           }
           body *:not(nav, nav *, footer, footer *, #error-1, #error-2,#error-3, #error-1 *, #error-2 *, #error-3 *, #error-4, #error-5, #error-6, #error-4 *, #error-5 *, #error-6 *) {
-          body *:not(nav, nav *, footer, footer *, #error-1, #error-2,#error-3, #error-1 *, #error-2 *, #error-3 *, #error-4, #error-5, #error-6, #error-4 *, #error-5 *, #error-6 *) {
             animation: fadeIn 1.5s ease-in-out; 
-          }@media only screen and (max-width: 768px) {
-            .elform, .elform * {
-                width: 80%; /* Adjust the width for smaller screens */
-            }
-        }
           }@media only screen and (max-width: 768px) {
             .elform, .elform * {
                 width: 80%; /* Adjust the width for smaller screens */
