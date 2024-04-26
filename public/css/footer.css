@@ -1,0 +1,149 @@
+footer {
+    background: #333;
+    position: relative;
+     width: 94%; 
+      padding-right: 3%;
+      padding-left:3%; 
+  }
+  .mail{
+    padding-top:2%;
+    padding-bottom:1.5%;
+    border-bottom: 2px solid #ccc; 
+    color: #fff;
+    padding-left: 15px;
+  }
+  .mail h4{
+     padding-left: 3.5%;
+    margin:0
+  }
+  .mail span{
+    padding-left:1%;
+    color: #757575;
+    font-size: 15px;
+    vertical-align: middle;
+    margin-top: 2%;
+  }
+  .mail i {
+    color: #4f6fb0;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .copyright {
+    background: #202020;
+    padding-top: 1.7%;
+    padding-bottom: 1.7%;
+    text-align: center;
+    font-size: 14px;
+    color: #878787;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .copyright a{
+    color: #A03232 ;
+    text-decoration: none;
+  }
+  .copyright a:hover{
+    text-decoration:underline;
+  }
+  .payment{
+    float: right;
+    width:10%;
+    margin-top: 1%;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+}
+.anchors{
+    display: inline-block;
+    margin-right: -4%;
+}
+.anchors h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .anchors h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #4f6fb0 ;
+  }
+  .anchors ul li {
+    display:inline-block;
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .anchors ul li a:hover{
+    color: #FFD576;
+  }
+  .anchors ul li a {
+    color: #878787;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .subscribe p {
+    margin-bottom: 1%;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 28px;
+  }
+  .subscribe {
+    
+    display:inline-block;
+    color:#fff;
+  }
+  .subscribe input:focus{
+    border: transparent;
+  }
+
+  .subscribe *{
+    margin: 0;
+  }
+  .subscribe form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe  input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+  }
+  .subscribe button {
+      position: absolute;
+      right: 0;
+      background: #4f6fb0 ;
+      padding: 13px 20px;
+      top: 0;
+      cursor: pointer;
+  }
+  .subscribe button:hover{
+    background-color: #A03232;
+  }
+  .subscribe  i {
+    color: #fff;
+    font-size: 22px;
+  }
+  .brief {
+    margin-left: 2%;
+    display: inline-block;
+    color: #e7e7e7;
+    padding: 1%;
+    width:30%;
+    margin-right: 5%;
+    position: relative;
+    font-weight: 600;
+  }
+  .brief img{
+    width:20%;
+    display: block;
+  }

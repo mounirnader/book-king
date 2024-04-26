@@ -10,7 +10,12 @@ body{
             border: 4px solid #ccc;
             border-radius: 8px;
             padding: 1%;
+            padding: 1%;
             background-color: #4f6fb0;
+                margin-top:0.5%;
+                margin-bottom:  0.5%;
+                margin-left : 40%;
+                margin-right:40%;               
                 margin-top:0.5%;
                 margin-bottom:  0.5%;
                 margin-left : 40%;
@@ -19,12 +24,26 @@ body{
          
               }
         .elform input, .elform select, .elform input::placeholder, .btn, .elform label:last-of-type{
+        .elform input, .elform select, .elform input::placeholder, .btn, .elform label:last-of-type{
             display: block;
+            margin-bottom: 5%;
+            margin-top:2%;
             margin-bottom: 5%;
             margin-top:2%;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+            border-radius: 5px; 
+        }
+       .exit{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 5px; 
+       }
+    
+        .elform select{
+          width:50%
             border-radius: 5px; 
         }
        .exit{
@@ -87,7 +106,7 @@ body{
       }
       
       #error-1 span, #error-2 span, #error-3 span , #error-4 span, #error-5 span, #error-6 span{
-          font-size: 11px;
+          font-size: 9px;
           letter-spacing: 0.6px;
           border-width: 2px;
           font-family: 'Arial Narrow';
@@ -99,6 +118,18 @@ body{
       .log{
         margin-top:10%
       }
+     a{
+        color:#318f34
+     }
+      a:hover{
+        color:  #0b1633;
+      }
+      
+      .privacy input{
+       display: inline;
+       margin-left: 5%;
+      }
+    
 
         ::-webkit-scrollbar {
             display: none;
@@ -112,7 +143,13 @@ body{
             }
           }
           body *:not(nav, nav *, footer, footer *, #error-1, #error-2,#error-3, #error-1 *, #error-2 *, #error-3 *, #error-4, #error-5, #error-6, #error-4 *, #error-5 *, #error-6 *) {
+          body *:not(nav, nav *, footer, footer *, #error-1, #error-2,#error-3, #error-1 *, #error-2 *, #error-3 *, #error-4, #error-5, #error-6, #error-4 *, #error-5 *, #error-6 *) {
             animation: fadeIn 1.5s ease-in-out; 
+          }@media only screen and (max-width: 768px) {
+            .elform, .elform * {
+                width: 80%; /* Adjust the width for smaller screens */
+            }
+        }
           }@media only screen and (max-width: 768px) {
             .elform, .elform * {
                 width: 80%; /* Adjust the width for smaller screens */
