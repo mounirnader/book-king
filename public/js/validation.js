@@ -67,7 +67,6 @@ function validatePassword() {
         return checkPasswordMatch()
     }
 }
-passwordInput.addEventListener('input', checkPasswordMatch)
 function validatePhoneNumber() {
     const phoneRegex = /^(01)[0-9]{9}$/;
 

@@ -1,6 +1,6 @@
 body{
-    background-color:black;
-    align-items: center; /* Vertically center items */
+  background-color:#212121;
+  align-items: center; /* Vertically center items */
     justify-content: center; /* Horizontally center items */
     text-align: center;
     }
@@ -87,7 +87,7 @@ body{
       }
       
       #error-1 span, #error-2 span, #error-3 span , #error-4 span, #error-5 span, #error-6 span{
-          font-size: 11px;
+          font-size: 9px;
           letter-spacing: 0.6px;
           border-width: 2px;
           font-family: 'Arial Narrow';
@@ -99,6 +99,18 @@ body{
       .log{
         margin-top:10%
       }
+     a{
+        color:#318f34
+     }
+      a:hover{
+        color:  #0b1633;
+      }
+      
+      .privacy input{
+       display: inline;
+       margin-left: 5%;
+      }
+    
 
         ::-webkit-scrollbar {
             display: none;
