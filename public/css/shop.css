@@ -34,6 +34,14 @@ body{
       transition: opacity .2s ease-out;
   }
   
+  .book img {
+    transition: filter 0.8s ease-in-out; /* Transition for filter property */
+  }
+  
+  .book:hover img {
+    filter: blur(5px); /* Apply blur effect on hover */
+  }
+  
   .books h2 {
       font-size: medium;
       position: absolute;
@@ -95,11 +103,7 @@ body{
       opacity: 0;
   }
   
-  .book:hover img {
-      transition: opacity .3s ease-in;
-      opacity: 1;
-  }
-  
+
  
   
   @media only screen and (max-width: 768px) {
