@@ -48,7 +48,10 @@
 
             <label for="'address">Address</label>
             <input placeholder="Enter Your Address" name="address" type="text" id="address" title='Shipping address'>
-            <span class="privacy">I agree to the <a href="privacyPolicy.html" target="_blank">Privacy Policy</a><input type="checkbox" required></span>
+            <span class="privacy">I agree to the <a href="privacyPolicy.html" target="_blank">Privacy Policy</a><input type="checkbox" id="checkbox" required></span>
+            <div id="error-8">
+                <span><img src="../public/images/required.png"  alt="req" />PLEASE FILL ALL FIELDS</span>
+            </div>
 
             <button class="btn" type="button" id="signUp">Sign Up</button>
             <p id="message"></p>

@@ -74,7 +74,7 @@ body{
             color: #fff; 
         }
 
-        #error-1, #error-2,#error-3, #error-4, #error-5, #error-6{
+        #error-1, #error-2,#error-3, #error-4, #error-5, #error-6, #error-8{
           display: none;
           margin-left: 4%;
           z-index: 3;
@@ -89,7 +89,7 @@ body{
           padding:0
       }
       
-      #error-1 img, #error-2 img, #error-3 img, #error-4 img, #error-5 img, #error-6 img{
+      #error-1 img, #error-2 img, #error-3 img, #error-4 img, #error-5 img, #error-6 img, #error-8 img{
           width: 24px;
           height: 24px;
           border-radius: 2px;
@@ -99,7 +99,7 @@ body{
           vertical-align: middle;
       }
       
-      #error-1 span, #error-2 span, #error-3 span , #error-4 span, #error-5 span, #error-6 span{
+      #error-1 span, #error-2 span, #error-3 span , #error-4 span, #error-5 span, #error-6 span, #error-8 span{
           font-size: 9px;
           letter-spacing: 0.6px;
           border-width: 2px;
@@ -136,7 +136,7 @@ body{
               opacity: 1;
             }
           }
-          body *:not(nav, nav *, footer, footer *, #error-1, #error-2,#error-3, #error-1 *, #error-2 *, #error-3 *, #error-4, #error-5, #error-6, #error-4 *, #error-5 *, #error-6 *) {
+          body *:not(nav, nav *, footer, footer *, #error-1, #error-2,#error-3, #error-1 *, #error-2 *, #error-3 *, #error-4, #error-5, #error-6, #error-4 *, #error-5 *, #error-6 *, #error-8, #error-8 *) {
             animation: fadeIn 1.5s ease-in-out; 
           }@media only screen and (max-width: 768px) {
             .elform, .elform * {
