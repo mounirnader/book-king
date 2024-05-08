@@ -1,20 +1,190 @@
 body{
   background-color:#212121;
-    
+  width: auto;
     }
     ::-webkit-scrollbar {
-        display: none;
+      display: none;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
       }
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-          transform: translateY(-500px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0px);
-        }
+      100% {
+        opacity: 1;
       }
-      body *:not(nav, nav *, footer, footer *) {
-        animation: fadeIn 1.5s ease-in-out; 
+    }
+    body *:not(nav, nav *, footer, footer *, .book *) {
+      animation: fadeIn 1.5s ease-in-out; 
+    }
+
+  .ask{
+    background-color: #333;
+    border-radius: 5px;
+    padding:3%;
+    margin:1%;
+    color:#fff;
+    display: block;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    margin-bottom:2% ;
+  }
+ .ask input {
+    width: 30%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .ask button {
+      position: absolute;
+      background: #A03232 ;
+      border: none;
+      padding: 13px 20px;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 5px;
+      display: inline-flex;
+      flex-direction: row;
+      margin-left: 0.35%;
+      box-shadow: #21212154 10px -5px 10px;
+  }
+  .ask button:hover, .ask input:focus{
+   box-shadow: #212121 5px 5px 5px;
+  }
+  .ask  h3, .ask i{
+    font-size: 22px;
+    margin-top: 0%;
+  }
+  .ask i{
+    color: #fff;
+    margin-left: 1%;
+  }
+  .ask p{
+    margin-bottom: 6%;
+    color:#a6a6a6;
+  }
+  .ask img{
+    width:10%;
+    float: right;
+
+    }
+    @media screen and (max-width: 768px) {
+      .ask {
+          width: 50%;
       }
+      .ask input {
+          width: 50%;
+      }
+  }
+  @media screen and (max-width: 480px) {
+      .ask {
+          width: 80%;
+      }
+      .ask input {
+          width: 80%;
+      }
+  } .FAQs{
+    color: #f2f2f2;
+    display: block;
+    padding: 2%;
+    width:90%;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+  }
+  .FAQ{
+    cursor: pointer;
+    display: block;
+    flex-direction: column;
+    font-size: large;
+    margin: 3%;
+    padding: 2%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    border-radius: 5px;
+    color:#fff ;
+    box-shadow: #000000 20px 20px 20px;
+  }
+.FAQ P{
+  background-color: #333;
+  margin: 0%;
+  width: 90%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4%;
+}
+  .f1{
+    background: linear-gradient(to bottom right,#4f6fb0 , #333);
+
+  }
+  .f1:hover, .f1[open]{
+    background:#4f6fb0 ;
+  }
+  .f2{
+    background: linear-gradient(to bottom right,#A03232, #333);
+  }
+  .f2:hover, .f2[open]{
+    background:#A03232 ;
+  }
+  .f3{
+    background: linear-gradient(to bottom right,#f3ca6b, #333);
+  }
+  .f3:hover, .f3[open]{
+    background:#f3ca6b ;
+  }
+  .FAQ:hover{
+    box-shadow: #000000 -20px 20px 20px;
+  }
+ .FAQs h1{
+    
+  padding-top: 2%;
+  padding-bottom:2% ;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  border-radius: 5px;
+  font-size: 4rem;
+ } 
+ .FAQs h1::before {
+  content: '__';
+  vertical-align:super;
+  width: 1%;
+  margin-right: 3%;
+  height: 10px; 
+  transform: translateX(-50%);
+  background-image: linear-gradient(to left,#4f6fb0, #A03232, #FFD576);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent; 
+}
+.FAQs h1::after {
+content: '__';
+vertical-align:super;
+width: 5%;
+margin-left: 3%;;
+height: 10px; 
+transform: translateX(-50%);
+background-image: linear-gradient(to right,#4f6fb0, #A03232, #FFD576);
+-webkit-background-clip: text;
+background-clip: text; 
+color: transparent; 
+}
+.FAQs summary::-webkit-details-marker {
+  display: none;
+}
+
+.FAQs summary {
+  list-style-type: none;
+  padding: 1.5%;
+  -webkit-margin-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: larger;
+}
