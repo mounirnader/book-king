@@ -22,8 +22,18 @@
     </nav>
     <script src="../public/js/navbar.js"></script>
 
-    <form class ="searchbar" onsubmit="event.preventDefault();" role="search">
-        <input id="search"class="sinput" type="search" placeholder="Search..." autofocus required />   
+    <form class ="searchBar" onsubmit="event.preventDefault();" role="search">
+        <label for="search">Looking for a certain book... ?</label>
+        <div class="line"></div>
+        <select name="searchCategory" id="searchCategory" required>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="genre">Genre</option>
+        </select>
+        <input id="searchItem" name="searchItem" type="search" placeholder="Search..." autofocus required />
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>   
+        </button>
       </form>
 
     <div class='books'>
@@ -217,6 +227,27 @@
             </div>
         </div>
     </div>
+    <div class="space">
+    <div class="pagination">
+        <ul >
+          <li>
+            <a href="#"><i class="fa-solid fa-circle-chevron-left"></i> Prev</a>
+          </li>
+          <li class="active">
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">Next <i class="fa-solid fa-circle-chevron-right"></i></a>
+          </li>
+        </ul>
+      </div>
+      <button title="Go to Cart" type="button" onclick="location.replace('cart.html')" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p id="counter">
+        </p>
+        <script src="../public/js/numbers.js"></script>
+      </button>
+      </div>
     <script src="../public/js/imageNewTab.js"></script>
     <footer>
         <div class="mail">
