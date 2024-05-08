@@ -33,7 +33,9 @@ body{
       opacity: 0.9;
       transition: opacity .2s ease-out;
   }
-  
+  .currency{
+    font-size: small;
+  }
   .book img {
     transition: filter 0.8s ease-in-out; /* Transition for filter property */
   }
