@@ -108,6 +108,7 @@ phoneNumberInput.addEventListener('input', validatePhoneNumber);
 emailInput.addEventListener("input", validateEmail);
 
 function signUp() {
+    if(document.querySelector('form').checkValidity()){
     if (validateFullName() && validateEmail() && validatePhoneNumber() && validatePassword() && document.getElementById('checkbox').checked) {
         document.getElementById('error-8').style.display = 'none';
         const user = {
@@ -124,6 +125,8 @@ function signUp() {
         location.replace(`shop.html?name=${user.name}`);
     }
     else document.getElementById('error-8').style.display = 'block';
+}
+else document.querySelector('form').reportValidity();
 }
 
 document.getElementById('signUp').addEventListener('click', signUp);

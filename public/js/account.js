@@ -31,6 +31,7 @@ function validatePassword() {
 }
 passwordInput.addEventListener("input", validatePassword);
 function logIn() {
+    if(document.querySelector('form').checkValidity()){
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
 
@@ -46,6 +47,8 @@ function logIn() {
         } else {
           document.getElementById('error-6').style.display = 'block';
         }
+    }
+    else document.querySelector('form').reportValidity();
     }
 
 document.getElementById("login").addEventListener("click", logIn);

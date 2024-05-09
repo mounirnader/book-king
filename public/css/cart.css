@@ -1,136 +1,153 @@
-body {
-    background-color: #212121;
- 
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    background-color: #212121;
-    padding: 20px; /* Increase padding for better spacing */
-  }
-  
-  .small-container {
-    max-width: 900px;
-    margin: auto;
-    background-color: #333; /* Change background color to a darker shade */
-    padding: 20px;
-    border-radius: 12px; /* Add border radius for a rounded appearance */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Add a subtle shadow effect */
-    overflow: hidden; /* Hide overflowing content */
-  }
-  
-  
-  .cart-page {
-    margin-top: 15px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th,
-  td {
-    padding: 15px;
-    text-align: left;
-    font-size: 16px; /* Increase font size for table cells */
-  }
-  
-  .cart-info p {
-    margin: 0;
-    font-weight: bold;
-    color: #fff;
-    font-size: 18px; /* Increase font size for product names */
-  }
-  
-  .small-container {
-    max-width: 900px;
-    margin: auto;
-    background-color: #333;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-  }
-  
-  input[type="number"] {
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    color: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #212121;
-    outline: none;
-    font-size: 16px;
-    transition: border-color 0.3s ease; /* Add transition for smooth effect */
-  }
-  
-  /* Style for hover and focus */
-  input[type="number"]:hover,
-  input[type="number"]:focus {
-    border-color: #555;
-  }
-  
-  
-  
-  .cart-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .cart-info img {
-    width: 120px;
-    height: auto;
-    margin-right: 20px;
-    transition: transform 0.3s ease; /* Add transition for smooth effect */
-  }
-  
-  .cart-info img:hover {
-    transform: scale(1.1); /* Scale up the image on hover */
-  }
-  
-  
-  .cart-info p {
-    margin: 0;
-    font-weight: bold;
-    color: #fff;
-  }
-  
+body{
+  background-color:#212121;
+    
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    body *:not(nav, nav *, footer, footer *, .book *, .price *) {
+      animation: fadeIn 1.5s ease-in-out; 
+    }
 
-  .total-price {
-    margin-top: 20px;
-    text-align: right;
+  .cart{
+    background:#333;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #2E2E2E;
+    padding:2%;
+    margin:5%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
   }
-  
-  .total-price table {
-    width: auto;
+  .cart td,.cart tr{
+    margin: 20%;
   }
-  
-  .total-price td:first-child {
+  .cart .titles th{
     font-weight: bold;
-    padding-right: 20px;
+    font-size: xx-large;
+    text-align: left;
   }
-  .proceed-to-checkout {
-    position: absolute;
-    inset : 775px auto  auto 973px ;
-    margin-top: 20px; /* Adjust margin for spacing */
+  .cart .titles{
+    height: 5rem;
   }
-  
-  .proceed-to-checkout button {
-    background-color:#212121; /* Green button background color */
-    color: #fff; /* Button text color */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  .cart .line {
+    width: 91%; 
+    height: 1px;
+    background:linear-gradient(to right,#4f6fb0, #A03232,#FFD576);
   }
-  
-  .proceed-to-checkout button:hover {
-    background-color: white; /* Darken button color on hover */
-    color:#000
-  }
-  
+
+.book img{
+  width:33%;
+  object-fit: scale-down;
+  margin-top: 5%;
+}
+.remove{
+  background: #A03232;
+  background-clip: text;
+  color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 1%;
+  box-shadow: #212121 10px 5px 10px;
+  text-align: center;
+}
+.price{
+  font-size: small;
+  color:#ffd676b9
+}
+.book .price{
+  padding-left: 5%;
+}
+input,select,.cash {
+  width: 30%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+
+}
+input,select,.cash{
+  width:25%;
+  color: #b2b2b2e3
+}
+.cash{
+  font-size: medium;
+  font-weight: normal;
+  animation: fadeIn 0.1s ease-in-out; 
+  transition:  fadeIn 0.1s ease-in-out; ;
+
+}
+.book .price{
+  font-size: medium;
+}
+select{
+  margin-top: 5%;
+  width:58%;
+}
+
+input:focus,select:focus{
+  outline: none;
+  border: none;
+  box-shadow: #21212179 8px 8px 8px;
+}
+button:hover{
+  box-shadow: #212121 8px 8px 8px;
+}
+.payment input{
+  margin-top: 3%;
+  width:20%
+}
+
+
+.exit {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 0%;
+  background: linear-gradient(to bottom right,#A03232, #33333365);
+}
+
+.btn, .exit {
+  padding: 4%;
+  float: right;
+  margin-right:9%;
+  margin-left: -8%;
+  margin-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  color: #ffffffa2;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #333, 
+  2px 2px 2px #3335, 
+  2px 2px 2px #333, 
+  2px 2px 2px #333; 
+}
+.btn{
+  background: linear-gradient(to left top,#4f6fb0 , #33333365);}
+.btn:hover {
+  background:#4f6fb0 ;
+  color: #fff;
+}
+
+.exit:hover {
+  background:#A03232 ;
+  color: #fff;
+}
